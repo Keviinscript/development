@@ -32,6 +32,7 @@ body{
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: cover;
+    box-shadow: 2px 2px #000;
 }
 .homebackground::before{
     content: "";
@@ -54,6 +55,7 @@ body{
         background-repeat: no-repeat;
         background-attachment:scroll;
         background-size: cover;
+        box-shadow: 2px 2px #000;
     }
     .homebackground::before{
         content: "";
