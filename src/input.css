@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 185px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.logomini{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 175px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.homebackground{
+    width: 100%;
+    height:550px;
+    background-image: url(./img/adam-nowakowski-_dRjxWgse48-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+}
+.homebackground::before{
+    content: "";
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    width: 50%;
+    height: inherit;
+    background: rgba(199, 0, 33, .6);
+    clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%);
+  
+}
+
+@media  only screen and (max-width:768px)  {
+    .homebackground{
+        width: 100%;
+        height: 90vh;
+        background-image: url(./img/adam-nowakowski-_dRjxWgse48-unsplash.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-size: cover;
+    }
+    .homebackground::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60vh;
+        background: rgba(199, 0, 33, .7);
+        clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 36%);
+      
+    }
+}
+
+.shadows{
+    box-shadow: 5px 5px #000;
+}

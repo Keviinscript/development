@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,js}'],
+  theme: {
+    fontFamily: {
+      source: [ 'Source Sans Pro', 'sans-serif'],
+    },
+    extend: {
+      colors:{
+        'mainred': 'rgb(199, 0, 33)',
+        'maingrey': 'rgb(32, 32, 70)'
+      },
+    },
+  },
+  plugins: [],
+}
