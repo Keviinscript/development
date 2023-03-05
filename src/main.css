@@ -585,6 +585,14 @@ video {
   bottom: -4vh;
 }
 
+.-bottom-\[0vh\] {
+  bottom: -0vh;
+}
+
+.-bottom-\[15vh\] {
+  bottom: -15vh;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
