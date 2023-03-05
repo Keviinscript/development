@@ -593,6 +593,42 @@ video {
   bottom: -15vh;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.-top-0 {
+  top: -0px;
+}
+
+.top-\[100\%\] {
+  top: 100%;
+}
+
+.top-\[900\%\] {
+  top: 900%;
+}
+
+.top-\[90\%\] {
+  top: 90%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.top-\[70\%\] {
+  top: 70%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
