@@ -566,6 +566,31 @@ video {
   margin-bottom: 6vh;
 }
 
+.mx-\[\] {
+  margin-left: ;
+  margin-right: ;
+}
+
+.mx-\[2\] {
+  margin-left: 2;
+  margin-right: 2;
+}
+
+.mx-\[2\%\] {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.mx-\[4\%\] {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.mx-\[6\%\] {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
 .block {
   display: block;
 }
@@ -596,6 +621,26 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[3\] {
+  height: 3;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-\[30px\] {
+  height: 30px;
 }
 
 .w-\[40vw\] {
@@ -633,6 +678,14 @@ video {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
@@ -651,6 +704,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-x-11 {
@@ -807,6 +864,31 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-\[1px\] {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.py-\[0px\] {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .pt-4 {
