@@ -72,3 +72,9 @@ body{
 .shadows{
     box-shadow: 3px 3px #000;
 }
+
+.boxicon{
+  font-size: 55px;
+  color: rgba(199, 0, 33, .7);
+  font-weight: 300;
+}
