@@ -78,3 +78,15 @@ body{
   color: rgba(199, 0, 33, .7);
   font-weight: 300;
 }
+
+.experttraderbg{
+    width: 100%;
+    height: 250px;
+    background-color:rgba(26, 26, 55, .7);
+    background-image: url(./img/adam-nowakowski-VkRq5w3asCA-unsplash.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: contain;
+    box-shadow: 2px 2px #000;
+}
