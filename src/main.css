@@ -541,6 +541,11 @@ video {
   margin: 5%;
 }
 
+.mx-\[15\%\] {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .mx-\[20\%\] {
   margin-left: 20%;
   margin-right: 20%;
@@ -554,6 +559,16 @@ video {
 .my-\[6vh\] {
   margin-top: 6vh;
   margin-bottom: 6vh;
+}
+
+.mx-\[10\%\] {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mx-\[9\%\] {
+  margin-left: 9%;
+  margin-right: 9%;
 }
 
 .block {
@@ -680,6 +695,12 @@ video {
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -690,6 +711,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border-0 {
@@ -765,9 +790,24 @@ video {
   padding-bottom: 10px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pt-4 {
@@ -776,6 +816,11 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -836,6 +881,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -882,6 +932,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-mainred {
+  --tw-text-opacity: 1;
+  color: rgb(199 0 33 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -970,7 +1025,7 @@ body{
 
 .experttraderbg{
   width: 100%;
-  height: 250px;
+  height: 260px;
   background-color:rgba(26, 26, 55, .7);
   background-image: url(./img/adam-nowakowski-VkRq5w3asCA-unsplash.jpg);
   background-blend-mode: overlay;
