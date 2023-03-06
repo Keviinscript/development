@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors:{
         'mainred': 'rgb(199, 0, 33)',
-        'maingrey': 'rgb(32, 32, 70)'
+        'maingrey': 'rgb(32, 32, 70)',
+        'maingrey7': ' rgba(229, 231, 235, .1)',
       },
     },
   },
