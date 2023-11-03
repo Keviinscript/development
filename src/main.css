@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -187,6 +190,10 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -339,6 +346,14 @@ menu {
 }
 
 /*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -433,6 +448,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -480,6 +498,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -541,9 +562,9 @@ video {
   margin: 5%;
 }
 
-.mx-\[20\%\] {
-  margin-left: 20%;
-  margin-right: 20%;
+.mx-\[10\%\] {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .mx-\[5\%\] {
@@ -569,16 +590,6 @@ video {
 .my-\[6vh\] {
   margin-top: 6vh;
   margin-bottom: 6vh;
-}
-
-.mx-\[\] {
-  margin-left: ;
-  margin-right: ;
-}
-
-.mx-\[6\] {
-  margin-left: 6;
-  margin-right: 6;
 }
 
 .block {
@@ -633,12 +644,44 @@ video {
   width: ;
 }
 
-.w-\[50\%\] {
-  width: 50%;
+.w-\[50\] {
+  width: 50;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[50vw\] {
+  width: 50vw;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[10p\] {
+  width: 10p;
+}
+
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
 }
 
 .-translate-x-\[50\%\] {
@@ -713,6 +756,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -731,10 +780,8 @@ video {
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-lg {
@@ -847,21 +894,6 @@ video {
   padding-bottom: 50px;
 }
 
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[20p\] {
-  padding-top: 20p;
-  padding-bottom: 20p;
-}
-
-.py-\[20px\] {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -876,6 +908,18 @@ video {
 
 .text-justify {
   text-align: justify;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
+.font-lora {
+  font-family: Lora, serif;
 }
 
 .text-2xl {
@@ -956,6 +1000,34 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[6vw\] {
+  font-size: 6vw;
+}
+
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.text-\[4\.5vw\] {
+  font-size: 4.5vw;
+}
+
+.text-\[4\.9vw\] {
+  font-size: 4.9vw;
+}
+
+.text-\[4\.6vw\] {
+  font-size: 4.6vw;
+}
+
+.text-\[5vw\] {
+  font-size: 5vw;
+}
+
+.text-\[5\.5vw\] {
+  font-size: 5.5vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -968,8 +1040,16 @@ video {
   font-weight: 600;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-normal {
@@ -999,6 +1079,10 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-maingrey7 {
+  color:  rgba(229, 231, 235, .1);
+}
+
 .text-mainred {
   --tw-text-opacity: 1;
   color: rgb(199 0 33 / var(--tw-text-opacity));
@@ -1007,6 +1091,24 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[vw\] {
+  color: vw;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 body{
@@ -1039,7 +1141,7 @@ body{
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-size: cover;
-  box-shadow: 2px 2px #000;
+  /* box-shadow: 2px 2px #000; */
 }
 
 .homebackground::before{
@@ -1063,7 +1165,7 @@ body{
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: cover;
-    box-shadow: 2px 2px #000;
+    /* box-shadow: 2px 2px #000; */
   }
 
   .homebackground::before{
@@ -1072,9 +1174,35 @@ body{
     bottom: 0;
     width: 100%;
     height: 60vh;
-    background: rgba(199, 0, 33, .7);
+    background: linear-gradient(-45deg, #fffffa, 	#c70021, 	#00c7a6, 	#060606);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    opacity: .7;
     -webkit-clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 36%);
             clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 36%);
+  }
+}
+
+.bgtradertrust {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #fffffa, 	#c70021, 	#00c7a6, 	#060606);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -1149,36 +1277,12 @@ body{
     height: 60vh;
   }
 
-  .md\:w-\[80vw\] {
-    width: 80vw;
-  }
-
-  .md\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[0\%\] {
-    width: 0%;
-  }
-
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .md\:w-\[65\%\] {
-    width: 65%;
-  }
-
-  .md\:w-\[6\%\] {
-    width: 6%;
-  }
-
   .md\:w-\[66\%\] {
     width: 66%;
+  }
+
+  .md\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .md\:grid-cols-4 {
@@ -1200,6 +1304,11 @@ body{
     background-color: rgb(32 32 70 / var(--tw-bg-opacity));
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:py-\[20px\] {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1208,11 +1317,6 @@ body{
   .md\:py-\[80px\] {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .md\:pl-\[5\%\] {
@@ -1240,3 +1344,4 @@ body{
     letter-spacing: -0.025em;
   }
 }
+

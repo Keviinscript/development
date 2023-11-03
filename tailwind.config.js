@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     fontFamily: {
       source: [ 'Source Sans Pro', 'sans-serif'],
+      poppins: [ 'Poppins', 'sans-serif'],
+      lato: [ 'Lato', 'sans-serif'],
+      lora: [ 'Lora', 'serif'],
     },
     extend: {
       colors:{
