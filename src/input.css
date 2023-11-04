@@ -79,10 +79,10 @@ body{
     width: 100%;
     max-width: 100%;
     background: #1e293b;
-    background-attachment:scroll;
-    -webkit-background-attachment: scroll;
-    background-image: url(./img/whytrader.jpg);
-    -webkit-background-image:url(./img/whytrader.jpg);
+    background-attachment:fixed;
+    -webkit-background-attachment: fixed;
+    background-image: url(./img/dylan-calluy-JpflvzEl5cg-unsplash.jpg);
+    -webkit-background-image:url(./img/dylan-calluy-JpflvzEl5cg-unsplash.jpg);
     background-blend-mode:overlay;
      -webkit-background-blend-mode: overlay;
     background-repeat: no-repeat;
