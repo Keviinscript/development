@@ -77,16 +77,24 @@ body{
 
 .bgtradertrust {
     width: 100%;
+    max-width: 100%;
     background: #1e293b;
     background-attachment:fixed;
+    -webkit-background-attachment: fixed;
     background-image: url(./img/whytrader.jpg);
-    background-blend-mode:multiply;
+    -webkit-background-image:url(./img/whytrader.jpg);
+    background-blend-mode:overlay;
+     -webkit-background-blend-mode: overlay;
     background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size:cover;
     background-position: center center;
+    -webkit-background-position:center center;
     color: white;
  
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
