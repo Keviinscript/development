@@ -563,24 +563,19 @@ video {
   margin-right: 10%;
 }
 
-.mx-\[5\%\] {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .mx-\[6\%\] {
   margin-left: 6%;
   margin-right: 6%;
 }
 
-.mx-\[9\%\] {
-  margin-left: 9%;
-  margin-right: 9%;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .my-\[6vh\] {
@@ -591,21 +586,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-\[\] {
-  margin-top: ;
-  margin-bottom: ;
-}
-
-.my-\[20px\] {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.my-\[30px\] {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .block {
@@ -827,11 +807,6 @@ video {
   padding-right: 1.75rem;
 }
 
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -855,11 +830,6 @@ video {
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.py-\[15px\] {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .py-\[30px\] {
@@ -908,11 +878,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-\[\.75vw\] {
@@ -1042,11 +1007,6 @@ video {
   color: rgb(163 230 53 / var(--tw-text-opacity));
 }
 
-.text-mainred {
-  --tw-text-opacity: 1;
-  color: rgb(199 0 33 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1135,7 +1095,7 @@ body{
   width: 100%;
   background: #1e293b;
   background-attachment:fixed;
-  background-image: url(./img/dylan-calluy-JpflvzEl5cg-unsplash.jpg);
+  background-image: url(./img/whytrader.jpg);
   background-blend-mode:multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1164,18 +1124,6 @@ body{
 .boxicon{
   font-size: 60px;
   color: #a3e635;
-}
-
-.experttraderbg{
-  width: 100%;
-  height: 260px;
-  background-color:rgba(26, 26, 55, .7);
-  background-image: url(./img/adam-nowakowski-VkRq5w3asCA-unsplash.jpg);
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
-  box-shadow: 2px 2px #000;
 }
 
 @media  only screen and (min-width:768px){
