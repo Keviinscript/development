@@ -13,7 +13,7 @@ module.exports = {
         'mainred': 'rgb(199, 0, 33)',
         'maingrey': 'rgb(32, 32, 70)',
         'maingrey7': ' rgba(229, 231, 235, .1)',
-        'mainlime': ' rgba(163, 230, 53, .6)',
+        'mainlime': '#FFB55C',
       },
     },
   },
