@@ -162,3 +162,17 @@ body{
 
 }
 
+.tradingbot img{
+    width: 480px;
+    max-width: 100%;
+}
+
+.numbering img{
+    width: 25px;
+    max-width: 100%;
+}
+
+.minus img{
+     width: 350px;
+     height: 15px;
+}
