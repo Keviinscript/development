@@ -14,7 +14,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-2550px);
   }
 }
 .slider {
@@ -24,7 +24,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 85vw;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
@@ -44,7 +44,7 @@
   top: 0;
 }
 .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 70s linear infinite;
   display: flex;
   width: 3500px;
 }
@@ -53,4 +53,7 @@
   width: 250px;
 }
 
+.slide img{
+  width: 10em;
+}
 /*# sourceMappingURL=styles.css.map */
