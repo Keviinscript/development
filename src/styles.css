@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* .bodyyy {
+.bodyyy {
   align-items: center;
-  background: #E3E3E3;
+  overflow-x: hidden;
   display: flex;
-  height: 100vh;
+ /* width: 100vw; */
   justify-content: center;
-} */
+}
 
 @keyframes scroll {
   0% {
@@ -19,12 +19,12 @@
 }
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 100vw;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
