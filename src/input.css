@@ -149,6 +149,10 @@ body{
         background-attachment: scroll;
         box-shadow: 2px 2px #000;
     }
+
+    .headingbar{
+        background: rgb(32, 32, 70);
+    }
 }
 
 .invstmethod img{
@@ -176,4 +180,8 @@ body{
 .minus img{
      width: 350px;
      height: 15px;
+}
+
+.boxedshadow{
+    box-shadow: 2px 2px rgb(32, 32, 70);
 }
