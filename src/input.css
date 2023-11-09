@@ -127,9 +127,10 @@ body{
     box-shadow: 3px 3px #000;
 }
 
-.boxicon{
-  font-size: 60px;
-  color: #FFB55C;
+.boxicon img{
+  width: 4.5em;
+  max-width: 100%;
+  align-items: center;
 }
 
 
