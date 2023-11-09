@@ -153,6 +153,21 @@ body{
     .headingbar{
         background: rgb(32, 32, 70);
     }
+
+    .navfixed{
+        position: fixed;
+        background: white;
+        /* padding-bottom: 40px;
+        height: 30px; */
+        top: 0;
+        width: 100%;
+        animation: navfixed .1s ease-in-out;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(.65,.27,.63,.9) ;
+        z-index: 9999;
+        -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
 }
 
 .invstmethod img{
@@ -185,3 +200,27 @@ body{
 .boxedshadow{
     box-shadow: 2px 2px rgb(32, 32, 70);
 }
+
+.navfixed{
+    position: fixed;
+    background: white;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    animation: navfixed .1s ease-in-out;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.65,.27,.63,.9) ;
+    z-index: 9999;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  @keyframes navfixed {
+    from{
+      position: relative;
+    }
+    to{
+     position: fixed;
+    }
+  }
+
+  

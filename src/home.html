@@ -35,7 +35,7 @@
         <!-- top contact bar -->
         <div class=" md:bg-maingrey  h-[60px] md:h-[40px] flex  mx-auto">
             <!-- nav bar smal screen -->
-            <div class="w-full relative block md:hidden ">
+            <div class="w-full largenav relative block md:hidden z-[999] ">
                 <div class="flex justify-center items-center h-[90%] my-auto">
                     <img src="./img/alpeada-logo/vector/default-monochrome-black.svg" class="logomini" alt="">
                 </div>
@@ -66,14 +66,14 @@
         <section>
           <nav>
             <!-- navigation for large screens -->
-            <div class="hidden md:flex bg-white h-[70px]">
+            <div class="hidden md:flex h-[70px]  largenav ">
                 <div class="w-[90%] mx-auto">
                     <div class="flex justify-start items-center gap-x-[15%]">
                         <div>
                             <img src="./img/alpeada-logo/vector/default-monochrome-black.svg" class="logo" alt="logo">
                         </div>
                         <div class="uppercase">
-                            <ul class="flex gap-x-7 font-medium text-black text-[1.3vw] ">
+                            <ul class="flex gap-x-7 font-medium text-black text-[1.3vw] font-poppins ">
                                 <li>
                                     <a href="#">about</a>
                                 </li>
@@ -87,7 +87,7 @@
                                     <a href="#">invest</a>
                                 </li>
                                 <li>
-                                    <a href="#">eductaion</a>
+                                    <a href="#">education</a>
                                 </li>
                                 <li>
                                     <a href="#">affiliates</a>
@@ -734,13 +734,16 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-   <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
+    
    <script>
         var typed = new Typed('#element', {
       strings: ['PAY LESS', 'TRADE MORE'],
