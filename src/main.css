@@ -566,6 +566,10 @@ video {
   top: 30px;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -597,16 +601,6 @@ video {
 .my-\[30px\] {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.my-\[5em\] {
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-.my-\[6vh\] {
-  margin-top: 6vh;
-  margin-bottom: 6vh;
 }
 
 .my-auto {
@@ -652,14 +646,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[90px\] {
-  height: 90px;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .w-3 {
@@ -1016,6 +1002,16 @@ video {
   padding-bottom: 50px;
 }
 
+.py-\[5em\] {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.py-\[6vh\] {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1356,6 +1352,76 @@ body{
   }
 }
 
+/* .fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/annoie.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+  } */
+
+/* .fixed-background {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .fixed-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-image: url(./img/annoie.jpg);
+    background-size: cover;
+    z-index: -1; 
+  }
+
+  .content {
+    position: relative;
+    z-index: 1; 
+} */
+
+.section-container {
+  position: relative;
+  /* height: 100vh; */
+  overflow: hidden;
+  /* Ensure the section clips the fixed background */
+}
+
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: rgb(32, 32, 70);
+  background-image: url(./img/annoie.jpg);
+  background-blend-mode:multiply;
+  -webkit-background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size:cover;
+  background-position: center center;
+  -webkit-background-position:center center;
+  z-index: -1;
+}
+
+.bgtradertrus {
+  position: relative;
+  z-index: 1;
+  /* Ensure content is rendered above the background */
+  background-color: transparent;
+  /* Set the background to transparent */
+}
+
 .bgtradertrust {
   width: 100%;
   max-width: 100%;
@@ -1529,11 +1595,6 @@ body{
     top: 6rem;
   }
 
-  .md\:my-\[10vh\] {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1548,18 +1609,6 @@ body{
 
   .md\:h-\[40px\] {
     height: 40px;
-  }
-
-  .md\:h-\[50px\] {
-    height: 50px;
-  }
-
-  .md\:h-\[60px\] {
-    height: 60px;
-  }
-
-  .md\:h-\[80px\] {
-    height: 80px;
   }
 
   .md\:grid-cols-2 {
@@ -1590,6 +1639,11 @@ body{
   .md\:bg-maingrey {
     --tw-bg-opacity: 1;
     background-color: rgb(32 32 70 / var(--tw-bg-opacity));
+  }
+
+  .md\:py-\[10vh\] {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 
   .md\:py-\[80px\] {

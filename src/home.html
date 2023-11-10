@@ -33,7 +33,7 @@
 <body>
     <main>
         <!-- top contact bar -->
-        <div class=" md:bg-maingrey  h-[60px] md:h-[40px] flex  mx-auto">
+        <div class="bg-white md:bg-maingrey  h-[60px] md:h-[40px] flex md:hidden  mx-auto">
             <!-- nav bar smal screen -->
             <div class="w-full largenav relative block md:hidden z-[999] ">
                 <div class="flex justify-center items-center h-[90%] my-auto">
@@ -45,6 +45,9 @@
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="hidden bg-maingrey  h-[60px] md:h-[40px] md:flex  mx-auto">
             <!-- contact bar large  -->
             <div class=" hidden md:flex justify-end items-center w-[80%] mx-auto ">
                 <div class="flex justify-end items-center text-white">
@@ -62,11 +65,12 @@
                 </div>
             </div>
         </div>
+
         <!-- navigation bar -->
         <section>
           <nav>
             <!-- navigation for large screens -->
-            <div class="hidden md:flex h-[70px]  largenav ">
+            <div class="hidden md:flex h-[70px]  largenav bg-white ">
                 <div class="w-[90%] mx-auto">
                     <div class="flex justify-start items-center gap-x-[15%]">
                         <div>
@@ -146,8 +150,8 @@
             </div>
         </section>
         <!--  -->
-        <section>
-            <div class=" flex justify-center items-center mx-[10%] my-[6vh] md:my-[10vh]">
+        <section class="bg-white">
+            <div class=" flex justify-center items-center mx-[10%] py-[6vh] md:py-[10vh]">
                 <div class="space-y-6">
                     <div class="text-center text-xl font-semibold text-maingrey  ">
                         <p class="tracking-normal font-poppins uppercase">Join forces with a leading global broker and start getting more from the markets.</p>
@@ -159,63 +163,64 @@
             </div>
         </section>
         <!--  -->
-        <section class="">
-            <div class="bgtradertrust py-[50px] md:py-[80px] ">
-                <div class="flex justify-center items-center my-[30px]">
-                    <h1 class="text-3xl font-semibold text-white tracking-tight md:text-4xl font-poppins whitespace-nowrap ">Why Traders Trust ALPEADA</h1>
-                </div>
-                <div class="flex justify-center items-center py-[10px]">
-                    <div class="grid grid-rows-4 md:grid-rows-1 md:grid-cols-4">
-                        <!-- each box --> 
-                        <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md">
-                            <div class="text-center">
-                                <div class="boxicon flex justify-center w-full py-[1em]">
-                                    <img src="./img/chart.png" alt="">
+        <section class="section-container">
+                <div class="fixed-background"></div>
+                <div class="bgtradertrus  content z-20 py-[50px] md:py-[80px] ">
+                    <div class="flex justify-center items-center my-[30px] mx-auto ">
+                        <h1 class="text-3xl text-center font-semibold text-white tracking-tight md:text-4xl font-poppins">Why Traders Trust <span class="text-mainlime">ALPEADA</span> </h1>
+                    </div>
+                    <div class="flex justify-center items-center py-[10px]">
+                        <div class="grid grid-rows-4 md:grid-rows-1 md:grid-cols-4">
+                            <!-- each box --> 
+                            <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md">
+                                <div class="text-center">
+                                    <div class="boxicon flex justify-center w-full py-[1em]">
+                                        <img src="./img/chart.png" alt="">
+                                    </div>
+                                    <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins ">Trading</h1></div>
+                                    <div class="px-4 py-6"><p class="text-white text-[15px] md:text-[15px] md:font-normal font-lato font-light md:tracking-tight">Access the biggest markets worldwide, with an account tailored to your needs.</p></div>
                                 </div>
-                                <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins ">Trading</h1></div>
-                                <div class="px-4 py-6"><p class="text-white text-[15px] md:text-[15px] md:font-normal font-lato font-light md:tracking-tight">Access the biggest markets worldwide, with an account tailored to your needs.</p></div>
                             </div>
-                        </div>
-                        <!-- end of box -->
-                        <!-- each box --> 
-                        <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
-                            <div class="text-center">
-                                <div class="boxicon flex justify-center w-full py-[1em]">
-                                    <img src="./img/book.png" alt="">
+                            <!-- end of box -->
+                            <!-- each box --> 
+                            <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                                <div class="text-center">
+                                    <div class="boxicon flex justify-center w-full py-[1em]">
+                                        <img src="./img/book.png" alt="">
+                                    </div>
+                                    <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Knowledge</h1></div>
+                                    <div class="px-4 py-6"><p class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">Get daily market updates and expert analysis, explore our e-learning academy and utilize our free trading tools, pip calculators and economic calendars outlining high-impact events.</p></div>
                                 </div>
-                                <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Knowledge</h1></div>
-                                <div class="px-4 py-6"><p class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">Get daily market updates and expert analysis, explore our e-learning academy and utilize our free trading tools, pip calculators and economic calendars outlining high-impact events.</p></div>
                             </div>
-                        </div>
-                        <!-- end of box -->
-                        <!-- each box --> 
-                        <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
-                            <div class="text-center">
-                                <div class="boxicon flex justify-center w-full py-[1em]">
-                                    <img src="./img/clock.png" alt="">
+                            <!-- end of box -->
+                            <!-- each box --> 
+                            <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                                <div class="text-center">
+                                    <div class="boxicon flex justify-center w-full py-[1em]">
+                                        <img src="./img/clock.png" alt="">
+                                    </div>
+                                    <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Performance</h1></div>
+                                    <div class="px-4 py-6"><p class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">Enjoy spreads from zero, lightning-fast execution and trade at the best available prices.</p></div>
                                 </div>
-                                <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Performance</h1></div>
-                                <div class="px-4 py-6"><p class="text-white text-[15px] font-light md:text-[15px] font-lato md:font-normal md:tracking-tight">Enjoy spreads from zero, lightning-fast execution and trade at the best available prices.</p></div>
                             </div>
-                        </div>
-                        <!-- end of box -->
-                        <!-- each box --> 
-                        <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
-                            <div class="text-center ">
-                                <div class="boxicon flex justify-center w-full py-[1em]">
-                                    <img src="./img/security.png" alt="">
+                            <!-- end of box -->
+                            <!-- each box --> 
+                            <div class="flex justify-center items-center border-0 bg-maingrey7 m-[5%] py-[100px] rounded-md ">
+                                <div class="text-center ">
+                                    <div class="boxicon flex justify-center w-full py-[1em]">
+                                        <img src="./img/security.png" alt="">
+                                    </div>
+                                    <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Safety</h1></div>
+                                    <div class="px-4 py-6"><p class="text-white text-[15px] md:text-[15px] font-light font-lato md:font-normal md:tracking-tight">As a globally regulated and licensed broker, your funds are fully segregated and protected, meaning you can trade with total peace of mind.</p></div>
                                 </div>
-                                <div><h1 class="text-white text-[2em] font-medium tracking-tight font-poppins">Safety</h1></div>
-                                <div class="px-4 py-6"><p class="text-white text-[15px] md:text-[15px] font-light font-lato md:font-normal md:tracking-tight">As a globally regulated and licensed broker, your funds are fully segregated and protected, meaning you can trade with total peace of mind.</p></div>
                             </div>
+                            <!-- end of box -->
                         </div>
-                        <!-- end of box -->
                     </div>
                 </div>
-            </div>
         </section>
        
-        <section>
+        <section class="bg-white">
             <div class="mx-auto w-[90%]">
                 <div class="">
                     <div class="font-lato text-gray-800 text-start space-y-2 py-[4em]">
@@ -310,8 +315,8 @@
                 </div>
             </div>
         </section>
-        <section class="my-[5em] ">
-            <div class="my-[2em]">
+        <section class="py-[5em] bg-white ">
+            <div class="py-[2em]">
                 <div class="font-poppins tracking-tight flex justify-center w-full text-3xl font-bold text-center text-maingrey py-[20px]">
                     <h1>Trusted Worldwide</h1>
                 </div> 
