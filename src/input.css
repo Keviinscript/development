@@ -152,7 +152,7 @@ body{
  
   .bgtradertrus {
     position: relative;
-    z-index: 1; /* Ensure content is rendered above the background */
+    z-index: 5; /* Ensure content is rendered above the background */
     background-color: transparent; /* Set the background to transparent */
   }
 
