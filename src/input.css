@@ -291,4 +291,37 @@ body{
     }
   }
 
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
   
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .revealleft {
+    position: relative;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealleft.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .revealright {
+    position: relative;
+    transform: translate3d(-2.7rem, -10rem, 1rem);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealright.active {
+    transform: translate3d(0, 0,0);
+    opacity: 1;
+  }
