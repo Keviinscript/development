@@ -1,5 +1,4 @@
 
-
 //REVEAL ELEMENTS 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -54,3 +53,5 @@ function revealRight() {
 }
 
 window.addEventListener("scroll", revealRight);
+
+
