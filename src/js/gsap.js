@@ -52,7 +52,7 @@
         x: '-100%',
         opacity: 0,
         stagger: 0.5,
-        ease:'power1.in',
+        ease:'power1.in',//change
         scrollTrigger: {
         trigger: box,
         start: "top center",
