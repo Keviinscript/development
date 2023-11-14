@@ -34,7 +34,7 @@
     joinText.forEach(text => {
     gsap.from(text, { 
         y: '100%',
-        duration: 1,
+        duration: 0.7,
         opacity: 0,
         stagger: 0.5,
         ease:'power1.in',
@@ -55,10 +55,56 @@
         ease:'power1.in',
         scrollTrigger: {
         trigger: box,
-        start: "top bottom",
+        start: "top center",
         toggleActions: "play none none reset"
         }
     })
+    });
+
+    const investMethods = gsap.utils.toArray('.invstmethods');
+    investMethods.forEach(method =>{
+        gsap.from( method, {
+            y: '100%',
+            opacity: 0,
+            stagger: 0.5,
+            ease:'power1.in',
+            scrollTrigger: {
+            trigger: method,
+            start: "top bottom",
+            toggleActions: "play none none reset"
+            }
+        })
+    });
+
+    const copyTrader = gsap.utils.toArray('.copytrader');
+    copyTrader.forEach( trader =>{
+        gsap.from( trader, {
+            x: '-100%',
+            opacity: 0,
+            stagger: 0.5,
+            duration:0.8,
+            ease:'power1.in',
+            scrollTrigger: {
+            trigger: trader,
+            start: "top center",
+            toggleActions: "play none none reset"
+            }
+        })
+    });
+
+    const accountType = gsap.utils.toArray('.acctype');
+    accountType.forEach(type =>{
+        gsap.from( type, {
+            y: '100%',
+            opacity: 0,
+            stagger: 0.5,
+            ease:'power1.in',
+            scrollTrigger: {
+            trigger: type,
+            start: "top bottom",
+            toggleActions: "play none none reset"
+            }
+        })
     });
 
 
