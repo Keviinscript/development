@@ -33,7 +33,8 @@
     const joinText = gsap.utils.toArray('.jointext');
     joinText.forEach(text => {
     gsap.from(text, { 
-        x: '-100%',
+        y: '100%',
+        duration: 1,
         opacity: 0,
         stagger: 0.5,
         ease:'power1.in',
@@ -48,7 +49,7 @@
     const trustBox = gsap.utils.toArray('.trustbox');
     trustBox.forEach(box => {
     gsap.from(box, { 
-        y: '100%',
+        x: '-100%',
         opacity: 0,
         stagger: 0.5,
         ease:'power1.in',
