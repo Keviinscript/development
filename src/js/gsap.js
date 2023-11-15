@@ -55,7 +55,7 @@
         ease:'power1.in',//change
         scrollTrigger: {
         trigger: box,
-        start: "top center",
+        start: "top bottom",
         toggleActions: "play none none reset"
         }
     })
@@ -67,7 +67,7 @@
             y: '100%',
             opacity: 0,
             stagger: 0.5,
-            ease:'power1.in',
+            ease:'expo.in',
             scrollTrigger: {
             trigger: method,
             start: "top bottom",
@@ -81,12 +81,12 @@
         gsap.from( trader, {
             x: '-100%',
             opacity: 0,
-            stagger: 0.5,
-            duration:0.8,
-            ease:'power1.in',
+            stagger: 0.7,
+            duration:1,
+            ease:'power4.in',
             scrollTrigger: {
             trigger: trader,
-            start: "top center",
+            start: "top bottom",
             toggleActions: "play none none reset"
             }
         })
@@ -98,7 +98,7 @@
             y: '100%',
             opacity: 0,
             stagger: 0.5,
-            ease:'power1.in',
+            ease:'power3.in',
             scrollTrigger: {
             trigger: type,
             start: "top bottom",
