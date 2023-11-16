@@ -14,6 +14,7 @@ module.exports = {
         'maingrey': 'rgb(32, 32, 70)',
         'maingrey7': ' rgba(229, 231, 235, .1)',
         'mainlime': '#FFB55C',
+        'transwhite': 'rgba(255, 255, 255, .8)'
       },
     },
   },
