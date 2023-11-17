@@ -79,7 +79,7 @@ register.addEventListener('click', () => {
 });
 
 function changeItems (){
-    let signIn =  `<div class="mx-auto grid gap-4 mb-5">
+    let signIn =  `<div class="mx-auto grid gap-6 mb-5">
                         <div class="relative z-0">
                         <input required type="email" id="floating_standard" class="block rounded-t-lg px-2.5 pb-2.5  w-full text-sm text-gray-900 bg-gray-50  border-0 border-b-2  appearance-none border-gray-600  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="floating_standard" class="absolute ml-1 text-sm text-maingrey duration-300 transform -translate-y-7 scale-75 top-2  origin-[0] peer-focus:start-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-95 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email</label>
@@ -88,8 +88,21 @@ function changeItems (){
                         <input required type="password" id="floating_standard" class="block rounded-t-lg px-2.5 pb-2.5  w-full text-sm text-gray-900 bg-gray-50  border-0 border-b-2  appearance-none border-gray-600  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="floating_standard" class="absolute ml-1 text-sm text-maingrey duration-300 transform -translate-y-7 scale-75 top-2  origin-[0] peer-focus:start-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-95 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Password</label>
                         </div>   
-                        <div>
-                        <button type="submit" class="text-gray-900 bg-mainlime focus:ring-4 focus:outline-none  font-semibold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Log In</button>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-start mb-">
+                                    <div class="flex items-center h-5">
+                                        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-mainlime " >
+                                    </div>
+                                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 ">Remember me</label>
+                            </div>
+                            <div>
+                              <a href="#" class="text-sm underline font-normal text-black">Forgot Password?</a>  
+                            </div>
+
+                        </div>
+                      
+                        <div class="pt-[1em] flex justify-center ">
+                    <button type="submit" class="text-gray-900 bg-mainlime focus:ring-4 focus:outline-none  font-semibold rounded-lg text-sm w-full sm:w-[50%] px-5 py-2.5 text-center ">Log In</button>
                            
                         </div>             
                     </div>`;

@@ -976,6 +976,10 @@ video {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-x-11 {
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
@@ -1271,6 +1275,10 @@ video {
   padding: 2em;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1463,6 +1471,10 @@ video {
 
 .pt-\[3em\] {
   padding-top: 3em;
+}
+
+.pt-\[1em\] {
+  padding-top: 1em;
 }
 
 .text-left {
@@ -2254,6 +2266,14 @@ body{
 @media (min-width: 640px) {
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-\[\] {
+    width: ;
+  }
+
+  .sm\:w-\[50\%\] {
+    width: 50%;
   }
 
   .sm\:translate-x-0 {
