@@ -2095,7 +2095,7 @@ body{
 
 .signupbg{
   width: 100%;
-  /* height: 100vh; */
+  height: 120vh;
   background-color:rgba(26, 26, 55, .3);
   background-image: url(./img/signup.jpg);
   background-blend-mode: multiply;
