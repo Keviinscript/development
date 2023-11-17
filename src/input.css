@@ -355,3 +355,13 @@ body{
     background-position: center center;
     -webkit-background-position:center center; */
   }
+
+  .activesignoptionleft{
+    background-color: rgba(255, 255, 255, .8);
+    border-top-right-radius:1.5rem ;
+  }
+
+  .activesignoptionright{
+    background-color: rgba(255, 255, 255, .8);
+    border-top-left-radius:1.5rem ;
+  }
