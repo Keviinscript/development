@@ -12,6 +12,12 @@
             .from('.herotext',{y: '100%', ease: 'expo.in', opacity: 0, duration: 0.5}, '<')
             .from('.herobtn', {y: '100%', ease:'bounce.inOut', opacity: 0 , duration: 2}, 0);
 
+    const bigTimeline = gsap.timeline({defaults: {duration:1}});
+    bigTimeline.from('.alpeadalogomd', {x:'-100%', ease: 'power3.in', opacity:0 })
+                .from('.mainMenuItems',{x:'-100%', ease:'power2.in', opacity:0, stagger:0.4})
+                .from('.heromaintext', {x:'-100%', ease:'power3.in', opacity:0}, '<')
+                .from('.herobtnmain', {x: '-100%', ease:'bounce.inOut', opacity: 0 , duration: 2});
+
     // const timelineTwo = gsap.timeline({  
     //         scrollTrigger: {
     //             trigger:'.jointext',
