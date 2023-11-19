@@ -858,10 +858,6 @@ video {
   width: max-content;
 }
 
-.w-\[\] {
-  width: ;
-}
-
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1014,10 +1010,6 @@ video {
 
 .gap-y-\[40px\] {
   row-gap: 40px;
-}
-
-.gap-y-6 {
-  row-gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1424,19 +1416,14 @@ video {
   padding-bottom: 5em;
 }
 
-.py-\[6vh\] {
-  padding-top: 6vh;
-  padding-bottom: 6vh;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
 .py-\[6em\] {
   padding-top: 6em;
   padding-bottom: 6em;
+}
+
+.py-\[6vh\] {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
 }
 
 .pb-2 {
