@@ -51,7 +51,7 @@
                     </div>
                     <div class="absolute top-[30px] left-[20px] -translate-x-[50%] -translate-y-[50%]">
                         <div class="menubar flex items-center h-full">
-                            <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center  text-md text-maingrey md:hidden">
+                            <button id="menuBtn"  type="button" class="inline-flex items-center  text-md text-maingrey md:hidden">
                                 <!-- <span class="sr-only">Open sidebar</span> -->
                                 <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -59,27 +59,31 @@
                              </button>
                         </div>
                     </div>
-                    <aside id="logo-sidebar" class="fixed top-0 left-0 z-10 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-100">
+                    <aside id="logoSidebar" class="fixed top-0 left-0 z-[1] w-64 h-screen transition-transform -translate-x-[110%]  "> <!---translate-x-full -->
+                        
+                        <div class="h-full px-3 py-12 overflow-y-auto bg-gray-100">
+                            <div id="closeMenu" class="absolute top-[45%] -right-4 bg-gray-100 rounded-full">
+                                <img src="./img/arrow-left-double-line.svg" class="w-10" alt="">
+                            </div>
                            <a href="#" class="flex items-center ps-2.5 mb-10">
                               <img src="./img/alpeada-logo/vector/default-monochrome.svg" class="h-10 me-3 " alt="Flowbite Logo" />
                               <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
                            </a>
                            <ul class="space-y-4 font-medium">
                               <li>
-                                 <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                                 <a href="./home.html" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
                                     <img src="./img/home-angle-2-svgrepo-com.svg " alt="" class="flex-shrink-0 font-bold w-5 h-5 text-gray-500 transition duration-75 " >
                                     <span class="ms-6 font-poppins whitespace-nowrap font-light">Home</span>
                                  </a>
                               </li>
                               <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                                <a href="./about.html" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
                                    <img src="./img/about-us-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
                                    <span class="ms-6 font-poppins whitespace-nowrap font-light">About Alpeada</span>
                                 </a>
                              </li>
                              <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
+                                <a href="./pricing.html" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
                                    <img src="./img/price-tag-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
                                    <span class="ms-6 font-poppins whitespace-nowrap font-light">Pricing</span>
                                 </a>
@@ -90,14 +94,7 @@
                                    <span class="ms-6 font-poppins whitespace-nowrap font-light">Top Markets</span>
                                 </a>
                              </li>
-                             <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900  hover:bg-gray-100 group">
-                                   <img src="./img/policy-term-and-condition-term-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
-                                   <span class="ms-6 font-poppins whitespace-nowrap font-light">Terms & Conditions</span>
-                                </a>
-                             </li>
-                              
-                              
+                           
                               <li>
                                  <a href="./signup.html" class="flex items-center p-2 text-gray-900  group">
                                     <img src="./img/sign-in-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
@@ -106,7 +103,7 @@
                                  </a>
                               </li>
                               <li>
-                                 <a href="#" class="flex items-center p-2 text-gray-900  group">
+                                 <a href="./signup.html" class="flex items-center p-2 text-gray-900  group">
                                     <img src="./img/sign-out-svgrepo-com.svg " alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 " >
                                  
                                     <span class="flex-1 ms-6 whitespace-nowrap font-poppins font-light">Sign Up</span>
@@ -115,7 +112,60 @@
                            </ul>
                         </div>
                      </aside>
-                    
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container pb-[-3em]">
+                        <div class="tradingview-widget-container__widget "></div>
+                        <div class="tradingview-widget-copyright bg-white"><a href="https://www.tradingview.com/"
+                                rel="noopener nofollow" target="_blank"></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                            {
+                                "symbols": [{
+                                        "proName": "BITSTAMP:ETHUSD",
+                                        "title": "Ethereum"
+                                    },
+                                    {
+                                        "description": "Bitcoin",
+                                        "proName": "COINBASE:BTCUSD"
+                                    },
+                                    {
+                                        "description": "Solana",
+                                        "proName": "BINANCE:SOLUSDT"
+                                    },
+                                    {
+                                        "description": "Bnb",
+                                        "proName": "BINANCE:BNBUSDT"
+                                    },
+                                    {
+                                        "description": "Gold",
+                                        "proName": "FXOPEN:XAUUSD"
+                                    },
+                                    {
+                                        "description": "EURUSD",
+                                        "proName": "FX:EURUSD"
+                                    },
+                                    {
+                                        "description": "TSLA",
+                                        "proName": "NASDAQ:TSLA"
+                                    },
+                                    {
+                                        "description": "APPLE",
+                                        "proName": "NASDAQ:AAPL"
+                                    },
+                                    {
+                                        "description": "META",
+                                        "proName": "NASDAQ:META"
+                                    }
+                                ],
+                                "showSymbolLogo": true,
+                                "colorTheme": "light",
+                                "isTransparent": false,
+                                "displayMode": "adaptive",
+                                "locale": "en"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
                 </div>
     
     
